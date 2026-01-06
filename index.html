@@ -8,57 +8,55 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #eaeaea;
         }
 
-        /* Top logo section */
-        .header {
-            background-color: white;
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #003366;
-        }
-
-        .header img {
-            width: 140px;
-        }
-
-        /* Login box */
         .login-box {
-            width: 350px;
-            margin: 60px auto;
+            width: 380px;
+            margin: 80px auto;
             background: white;
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             text-align: center;
         }
 
-        .login-box h2 {
+        .logo {
+            margin-bottom: 15px;
+        }
+
+        .logo img {
+            width: 120px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h2 {
             color: #003366;
             margin-bottom: 20px;
         }
 
-        input[type="text"],
-        input[type="password"] {
+        input {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
-            border-radius: 5px;
+            border-radius: 6px;
             border: 1px solid #ccc;
+            font-size: 14px;
         }
 
-        input[type="submit"] {
+        button {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             background-color: #003366;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
+            font-size: 15px;
         }
 
-        input[type="submit"]:hover {
+        button:hover {
             background-color: #001f4d;
         }
     </style>
@@ -66,22 +64,22 @@
 
 <body>
 
-    <!-- LOGO AT TOP -->
-    <div class="header">
-        <img src="logo.png" alt="KLN College of Engineering Logo">
-    </div>
-
-    <!-- LOGIN FORM -->
     <div class="login-box">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="logo.png" alt="KLN College of Engineering Logo">
+        </div>
+
         <h2>Login</h2>
 
         <form>
             <input type="text" placeholder="Username" required>
             <input type="password" placeholder="Password" required>
-            <input type="submit" value="Login">
+            <button type="submit">Login</button>
         </form>
+
     </div>
 
 </body>
 </html>
-
