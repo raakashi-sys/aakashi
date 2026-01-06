@@ -6,13 +6,27 @@
 
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #e6e6e6;
+            background-color: #f2f2f2;
         }
 
+        /* Top logo section */
+        .header {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #003366;
+        }
+
+        .header img {
+            width: 140px;
+        }
+
+        /* Login box */
         .login-box {
             width: 350px;
-            margin: 100px auto;
+            margin: 60px auto;
             background: white;
             padding: 30px;
             border-radius: 8px;
@@ -20,14 +34,9 @@
             text-align: center;
         }
 
-        .login-box img {
-            width: 120px;
-            margin-bottom: 15px;
-        }
-
         .login-box h2 {
-            margin-bottom: 20px;
             color: #003366;
+            margin-bottom: 20px;
         }
 
         input[type="text"],
@@ -57,11 +66,13 @@
 
 <body>
 
+    <!-- LOGO AT TOP -->
+    <div class="header">
+        <img src="logo.png" alt="KLN College of Engineering Logo">
+    </div>
+
+    <!-- LOGIN FORM -->
     <div class="login-box">
-
-        <!-- KLN College Logo -->
-        <img src="C:\Users\Administrator\Downloads\IMG-20260106-WA0004.jpg">
-
         <h2>Login</h2>
 
         <form>
@@ -69,8 +80,8 @@
             <input type="password" placeholder="Password" required>
             <input type="submit" value="Login">
         </form>
-
     </div>
 
 </body>
 </html>
+
